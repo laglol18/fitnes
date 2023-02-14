@@ -1,0 +1,26 @@
+<h1>REGISTER</h1>
+
+<form method = 'POST' action="">
+    {% csrf_token %}
+    </br>{{form.first_name.label}}
+    {{form.first_name}}
+
+    </br>{{form.last_name.label}}
+    {{form.last_name}}
+
+    </br>{{form.username.label}}
+    {{form.username}}
+
+    </br>{{form.email.label}}
+    {{form.email}}
+
+    </br>{{form.password1.label}}
+    {{form.password1}}
+
+    </br>{{form.password2.label}}
+    {{form.password2}}
+
+
+
+    <input type="submit" name="Create user">
+</form>
